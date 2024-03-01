@@ -89,7 +89,7 @@ window.addEventListener("load",()=>{
       const options = {
         method: 'GET',
         headers: {
-          //'X-RapidAPI-Key': '00f521fed0mshab91a81be10b748p14aa29jsnc39c240ef8ac',
+          'X-RapidAPI-Key': '00f521fed0mshab91a81be10b748p14aa29jsnc39c240ef8ac',
           'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
         }
       };
