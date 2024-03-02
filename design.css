@@ -1,5 +1,7 @@
 @media  only screen and (max-width: 768px){
-    
+    nav{
+        position: absolute !important;
+    }
 
     .display-main {
         grid-template-columns: 1fr !important;
