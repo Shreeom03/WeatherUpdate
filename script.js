@@ -84,7 +84,7 @@ window.addEventListener("load",()=>{
     btn.addEventListener("click", async () => {
       const cityName = document.getElementsByName("cityName")[0].value;
     
-      const url = `https://open-weather13.p.rapidapi.com/city/${cityName}`;
+      const url = `https://open-weather13.p.rapidapi.com/city/${cityName}/EN`;
     
       const options = {
         method: 'GET',
@@ -135,6 +135,7 @@ window.addEventListener("load",()=>{
     
     
     const UpdateWetherUI = (data,unit)=>{
+      console.log(data);
       // *temperature
       const temperature = document.getElementById("temperature");
       temperature.innerHTML = ConvertToCelsius(data.main.temp , unit).toFixed(2) + "°C";
@@ -147,26 +148,26 @@ window.addEventListener("load",()=>{
     
       // *minimum
       const minimum = document.getElementById("minimum");
-      minimum.innerHTML = `Min: ${ConvertToCelsius(data.main.temp_min,unit).toFixed(2)}`
+      minimum.innerHTML = `Min: ${ConvertToCelsius(data.main.temp_min,unit).toFixed(2)} °C`
     
       // *maximum
       const maximum = document.getElementById("maximum");
-      maximum.innerHTML = `Max: ${ConvertToCelsius(data.main.temp_max,unit).toFixed(2)}`
+      maximum.innerHTML = `Max: ${ConvertToCelsius(data.main.temp_max,unit).toFixed(2)} °C`
     
     
       // *Atmospheric Pressure
       const pressure = document.getElementById("pressure");
-      pressure.innerHTML = `Pressure: ${data.main.pressure}`
+      pressure.innerHTML = `Pressure: ${data.main.pressure} Pa`
     
       // *visibility
       const visibility = document.getElementById("visibility");
-      visibility.innerHTML = `Visibility: ${data.visibility}`
+      visibility.innerHTML = `Visibility: ${data.visibility} M`
     
       // *wind-speed
       const windSpeed = document.getElementById("windSpeed");
-      windSpeed.innerHTML = `Wind Speed: ${data.wind.speed}`;
+      windSpeed.innerHTML = `Wind Speed: ${data.wind.speed} M/s`;
     
       // *humidity
       const humidity = document.getElementById("humidity");
-      humidity.innerHTML = `Humidity: ${data.main.humidity}`
+      humidity.innerHTML = `Humidity: ${data.main.humidity} G/Kg`
     }
