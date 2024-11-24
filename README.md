@@ -21,11 +21,13 @@ A dynamic and user-friendly weather forecast website that provides real-time wea
 ## 🚀 Technologies Used
 
 ### Frontend
+
 - **HTML5**: For structuring the web pages.
 - **CSS3**: For styling and responsive design.
 - **JavaScript (ES6)**: For interactivity and API integration.
 
 ### APIs
+
 - **Geolocation API**: For detecting the user's location.
 - **OpenWeather API (via RapidAPI)**: For fetching weather data.
 
@@ -35,5 +37,6 @@ A dynamic and user-friendly weather forecast website that provides real-time wea
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/weather-forecast-website.git
+   git clone https://github.com/Shreeom03/WeatherUpdate.git
    cd weather-forecast-website
+   ```
